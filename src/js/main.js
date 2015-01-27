@@ -37,7 +37,7 @@ function updateTimer(timestamp){
 	current = timestamp;
 
 	if(started) timer += dt;
-	t.html(timer.toFixed(2));
+	//t.html(timer.toFixed(2));
 
 	window.requestAnimationFrame(updateTimer);
 }
