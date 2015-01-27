@@ -17,6 +17,7 @@ function btnClick(evt){
 	if(started){
 		started = false;
 		btnPlayPause.html("INICIAR");
+		btnPlayPause.css("background-color", "green");
 		$(".time").html(timer.toFixed(2) + " segundos");
 		if(Math.abs(timer - 15) < 0.5){
 			$(".final").html("Você acertou!");
@@ -28,6 +29,7 @@ function btnClick(evt){
 		timer = 0;
 		started = true;
 		btnPlayPause.html("PARAR");
+		btnPlayPause.css("background-color", "red");
 		$(".result").hide();
 	}
 }
